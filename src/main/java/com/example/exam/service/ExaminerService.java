@@ -1,4 +1,8 @@
 package com.example.exam.service;
 
-public class ExaminerService {
+import com.example.exam.model.Question;
+import java.util.Collection;
+
+public interface ExaminerService {
+    Collection<Question> getQuestions(int amount);
 }
